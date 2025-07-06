@@ -69,6 +69,8 @@ export const gridItems = [
   },
 ];
 
+
+
 export const projects = [ 
   {
     id: 1,
@@ -114,28 +116,28 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Working with Rokibul was seamless and efficient. His technical skills and proactive mindset ensured our project exceeded expectations. I highly recommend him for any serious development work as he consistently delivers high-quality results. Rokibul's ability to adapt and innovate is truly impressive.",
     name: "Mahfuzul haq Limon",
     title: "Fontend Team Lead of Daniyal Technologies",
     image: "/limon_vai.jpeg", 
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Justin",
-    title: "Chairman of Nutrix",
+      "Rokibul brought clarity, creativity, and consistency to our project. His ability to transform ideas into functional, elegant solutions is unmatched. His attention to detail and commitment to quality were evident in every aspect of the work. I wholeheartedly recommend Rokibul for any project that demands excellence.",
+    name: "Al Hannan ",
+    title: "GM of AJI Group",
     image: "/rokib2.jpeg", 
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "From start to finish, Rokibul demonstrated exceptional professionalism and talent. His dedication to clean code and user-friendly design made a lasting impact on our team. His ability to adapt to our needs and deliver results on time was impressive. I highly recommend Rokibul for any project requiring a skilled and reliable developer.",
     name: "Istiaque",
     title: "UI/UX Team Lead of Daniyal Technologies",
     image: "/istiaqe_vai.jpeg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "From start to finish, Rokibul demonstrated exceptional professionalism and talent. His dedication to clean code and user-friendly design made a lasting impact on our team.I highly recommend Rokibul for any project requiring a skilled and reliable developer.",
     name: "Miraz Hassan",
     title: "CTO of Dhaka prokash",
     image: "/miraj_vai.jpg", 
