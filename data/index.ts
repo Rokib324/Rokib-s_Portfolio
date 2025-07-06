@@ -69,105 +69,95 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export const projects = [ 
   {
     id: 1,
     title: "Movie App fetching TMDB website API",
     des: "This is a movie site , where we use TMDB website API to show the popular Movies and TV shows. This is an Advance React website, where we used useState, useEffect, Implemented API and ADD, Remove functions.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    img: "/tmdb.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/django.svg", "/api.svg"],
+    link: "https://github.com/Rokib324/Movie_app",
   },
   {
     id: 2,
     title: "Health monitoring and advice Portal - AI, ML",
     des: "This is a health monitoring and advice portal that leverages AI and machine learning to provide personalized health insights and recommendations.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    img: "/ai_health.webp",
+    iconLists: ["/py.svg", "/django.svg", "/tensorflow.svg", "/tail.svg", "/js.svg"],
+    link: "https://github.com/Rokib324/Health_monitoring_and_advice_Portal",
   },
   {
     id: 3,
     title: "To Do List",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    img: "/todo.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://github.com/Rokib324/ToDo_List",
   },
   {
     id: 4,
-    title: "Chemical Formula Finder",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "web scrapper using python and Django",
+    des: "This is a web scrapper using python and Django, where we can scrap any website data and store it in our database.",
+    img: "/webs.jpg",
+    iconLists: ["/py.svg", "/django.svg", "/tail.svg", "/js.svg"],
+    link: "https://github.com/Rokib324/web-scrapper",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Rokibul was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rokib's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rokibul is the ideal partner.",
+    name: "Md Mahamudur Zaman Bhuyian",
+    title: "CTO of Daniyal Technologies",
+    image: "/fahad_sir.jpg", 
   },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Mahfuzul haq Limon",
+    title: "Fontend Team Lead of Daniyal Technologies",
+    image: "/limon_vai.jpeg", 
   },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Justin",
+    title: "Chairman of Nutrix",
+    image: "/rokib2.jpeg", 
   },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Istiaque",
+    title: "UI/UX Team Lead of Daniyal Technologies",
+    image: "/istiaqe_vai.jpeg",
   },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Miraz Hassan",
+    title: "CTO of Dhaka prokash",
+    image: "/miraj_vai.jpg", 
   },
+  
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "Daniyal Technologies",
+    img: "/dt_logo.png",
+    nameImg: "/dani_name.png",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "University of Greenwich",
+    img: "/ug.jpg",
+    nameImg: "/uog_name.png",
   },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
+  
+
 ];
 
 export const workExperience = [
@@ -180,22 +170,22 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Knowledge of Machine Learning",
+    desc: "Gained hands-on experience in machine learning algorithms and their applications in real-world scenarios.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Knowledge of Artificial Intelligence",
+    desc: "Developed AI-driven solutions to automate tasks and improve user experience.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Python and Django Developer",
+    desc: "Worked on backend development using Python and Django, creating robust APIs and database management.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
