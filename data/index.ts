@@ -14,7 +14,7 @@ export const gridItems = [
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
-    spareImg: "",
+    spareImg: "", 
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Copy the link to download my Resume",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -90,11 +90,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "To Do List",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/todo.jpg",
+    title: "Starbucks Coffee Slider",
+    des: "A Starbucks Coffee Slider website with a responsive design and a smooth scrolling effect.",
+    img: "/Star.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/Rokib324/ToDo_List",
+    link: "https://starbucks-coffee-slider.vercel.app/",
   },
   {
     id: 4,
