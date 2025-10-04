@@ -65,7 +65,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     | {
         size: number;
         order: number;
-        color: (t: number) => string;
+        color: string;
         lat: number;
         lng: number;
       }[]
@@ -118,18 +118,39 @@ export function Globe({ globeConfig, data }: WorldProps) {
     let points = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
-      const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
+      
+      // Validate lat/lng values to prevent NaN errors
+      if (
+        typeof arc.startLat !== 'number' || 
+        typeof arc.startLng !== 'number' || 
+        typeof arc.endLat !== 'number' || 
+        typeof arc.endLng !== 'number' ||
+        isNaN(arc.startLat) || 
+        isNaN(arc.startLng) || 
+        isNaN(arc.endLat) || 
+        isNaN(arc.endLng)
+      ) {
+        console.warn(`Invalid coordinates in arc ${i}:`, arc);
+        continue;
+      }
+      
+      const rgb = hexToRgb(arc.color);
+      if (!rgb) {
+        console.warn(`Invalid color in arc ${i}:`, arc.color);
+        continue;
+      }
+      
       points.push({
         size: defaultProps.pointSize,
         order: arc.order,
-        color: (t: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${1 - t})`,
+        color: `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 1)`,
         lat: arc.startLat,
         lng: arc.startLng,
       });
       points.push({
         size: defaultProps.pointSize,
         order: arc.order,
-        color: (t: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${1 - t})`,
+        color: `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 1)`,
         lat: arc.endLat,
         lng: arc.endLng,
       });
@@ -145,11 +166,16 @@ export function Globe({ globeConfig, data }: WorldProps) {
         ) === i
     );
 
-    setGlobeData(filteredPoints);
+    // Only set globeData if we have valid points
+    if (filteredPoints.length > 0) {
+      setGlobeData(filteredPoints);
+    } else {
+      console.warn("No valid points found for globe data");
+    }
   };
 
   useEffect(() => {
-    if (globeRef.current && globeData) {
+    if (globeRef.current && globeData && countries?.features) {
       globeRef.current
         .hexPolygonsData(countries.features)
         .hexPolygonResolution(3)
@@ -167,8 +193,20 @@ export function Globe({ globeConfig, data }: WorldProps) {
   const startAnimation = () => {
     if (!globeRef.current || !globeData) return;
 
+    // Filter out invalid arc data to prevent NaN errors
+    const validArcs = data.filter((arc: any) => 
+      typeof arc.startLat === 'number' && 
+      typeof arc.startLng === 'number' && 
+      typeof arc.endLat === 'number' && 
+      typeof arc.endLng === 'number' &&
+      !isNaN(arc.startLat) && 
+      !isNaN(arc.startLng) && 
+      !isNaN(arc.endLat) && 
+      !isNaN(arc.endLng)
+    );
+
     globeRef.current
-      .arcsData(data)
+      .arcsData(validArcs)
       .arcStartLat((d) => (d as { startLat: number }).startLat * 1)
       .arcStartLng((d) => (d as { startLng: number }).startLng * 1)
       .arcEndLat((d) => (d as { endLat: number }).endLat * 1)
@@ -186,7 +224,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       .arcDashAnimateTime((e) => defaultProps.arcTime);
 
     globeRef.current
-      .pointsData(data)
+      .pointsData(globeData)
       .pointColor((e) => (e as { color: string }).color)
       .pointsMerge(true)
       .pointAltitude(0.0)
@@ -194,7 +232,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     globeRef.current
       .ringsData([])
-      .ringColor((e: any) => (t: any) => e.color(t))
+      .ringColor((e: any) => (t: any) => e.color)
       .ringMaxRadius(defaultProps.maxRings)
       .ringPropagationSpeed(RING_PROPAGATION_SPEED)
       .ringRepeatPeriod(

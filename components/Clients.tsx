@@ -24,17 +24,11 @@ const Clients = () => {
         {/* Company Logos */}
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-10">
           {companies.map((company) => (
-            <div key={company.id} className="flex md:max-w-60 max-w-32 gap-2 items-center">
+            <div key={company.id} className="flex items-center justify-center">
               <img
                 src={company.img}
-                alt={`${company.name} logo icon`}
-                className="md:w-10 w-5"
-              />
-              <img
-                src={company.nameImg}
-                alt={`${company.name} logo text`}
-                width={company.id === 4 || company.id === 5 ? 100 : 150}
-                className="md:w-24 w-20"
+                alt={`${company.name} logo`}
+                className="h-16 md:h-20 w-auto object-contain filter brightness-0 invert hover:scale-105 transition-transform duration-300"
               />
             </div>
           ))}

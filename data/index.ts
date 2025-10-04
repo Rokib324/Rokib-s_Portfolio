@@ -149,24 +149,15 @@ export const companies = [
   {
     id: 1,
     name: "Daniyal Technologies",
-    img: "/dt_logo.png",
-    nameImg: "/dani_name.png",
+    img: "/dani_name_logo.webp",
   },
-  {
-    id: 2,
-    name: "University of Greenwich",
-    img: "/ug.jpg",
-    nameImg: "/uog_name.png",
-  },
-  
-
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full Stack Software Engineering Intern",
+    desc: "Worked on a web-based platform using NextJs and NestJs, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -186,8 +177,8 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "Python and Django Developer",
-    desc: "Worked on backend development using Python and Django, creating robust APIs and database management.",
+    title: "NestJs and NextJs Developer",
+    desc: "Worked on backend development using NestJs and NextJs, creating robust APIs and database management.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -201,8 +192,8 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
-    link: "https://twitter.com/yourusername",
+    img: "/fb2.svg",
+    link: "https://www.facebook.com/rakib4458",
   },
   {
     id: 3,
