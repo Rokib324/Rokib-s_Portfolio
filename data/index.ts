@@ -149,8 +149,24 @@ export const companies = [
   {
     id: 1,
     name: "Daniyal Technologies",
-    img: "/dani_name_logo.webp",
+    img: "/daniyal.png",
+    link: "https://daniyaltechnologies.com/",
+    quote: "Currently working with Daniyal Technologies as a Software Engineer",
   },
+  {
+    id: 2,
+    name: "Property Sheba BD",
+    img: "/propertysheba_logo.png",
+    link: "https://propertyshebabd.com/",
+    quote: "Developed their website from scratch"
+  },
+  {
+    id: 3,
+    name: "Asian Expo Conference",
+    img: "/asian_expo.png",
+    link: "https://asianexpobd.com/",
+    quote: "Developed their website from scratch"
+  }
 ];
 
 export const workExperience = [
