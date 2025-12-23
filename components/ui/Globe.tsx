@@ -168,7 +168,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     // Only set globeData if we have valid points
     if (filteredPoints.length > 0) {
-      setGlobeData(filteredPoints);
+    setGlobeData(filteredPoints);
     } else {
       console.warn("No valid points found for globe data");
     }

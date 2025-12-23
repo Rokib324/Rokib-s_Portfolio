@@ -9,6 +9,8 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import Technologies from "@/components/Technologies";
 
 
 const Home = () => {
@@ -20,8 +22,10 @@ const Home = () => {
         <Grid />
         <RecentProjects />
         <Clients/>
+        <Technologies/>
         <Experience />
         <Approach />
+        {/* <FeaturedProjects /> */}
         <Footer /> 
       </div>
     </main>

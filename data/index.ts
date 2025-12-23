@@ -69,8 +69,148 @@ export const gridItems = [
   },
 ];
 
-
-
+export const technologies = [
+  {
+    id: 1,
+    name: "React",
+    color: "text-white",
+    img: "/re.svg",
+    height: "h-10",
+  },
+  {
+    id: 2,
+    name: "Next.js",
+    color: "text-white",
+    img: "/next.svg",
+    height: "h-10",
+  },
+  {
+    id: 3,
+    name: "TailwindCSS",
+    color: "text-white",
+    img: "/tail.svg",
+    height: "h-10",
+  },
+  {
+    id: 4,
+    name: "JavaScript",
+    color: "text-white",
+    img: "/js.svg",
+    height: "h-10",
+  },
+  {
+    id: 5,
+    name: "TypeScript",
+    color: "text-white",
+    img: "/ts.svg",
+    height: "h-10",
+  },
+  {
+    id: 6,
+    name: "Python",
+    color: "text-white",
+    img: "/py.svg",
+    height: "h-10",
+  },
+  {
+    id: 7,
+    name: "Django",
+    color: "text-white",
+    img: "/django.svg",
+    height: "h-10",
+  },
+  {
+    id: 8,
+    name: "RESTful API",
+    color: "text-white",
+    img: "/api.svg",
+    height: "h-10",
+  },
+  {
+    id: 9,
+    name: "TensorFlow",
+    color: "text-white",
+    img: "/tensorflow.svg",
+    height: "h-10",
+  },
+  {
+    id: 10,
+    name: "Three.js",
+    color: "text-white",
+    img: "/three.svg",
+    height: "h-10",
+  },
+  {
+    id: 11,
+    name: "Git",
+    color: "text-white",
+    img: "/git.svg",
+    height: "h-10",
+  },
+  {
+    id: 12,
+    name: "Docker",
+    color: "text-white",
+    img: "/dock.svg",
+    height: "h-10",
+  },
+  {
+    id: 13,
+    name: "MongoDB",
+    color: "text-white",
+    img: "/mongo.svg",
+    height: "h-10",
+  },
+  {
+    id: 14,
+    name: "AWS",
+    color: "text-white",
+    img: "/aws.svg",
+    height: "h-10",
+  },
+  {
+    id: 15,
+    name: "NestJs",
+    color: "text-white",
+    img: "/nest.svg",
+    height: "h-10",
+  },
+  {
+    id: 16,
+    name: "Express",
+    color: "text-white",
+    img: "/express.svg",
+    height: "h-10",
+  },
+  {
+    id: 17,
+    name: "PostgreSQL",
+    color: "text-white",
+    img: "/postgres.svg",
+    height: "h-10",
+  },
+  {
+    id: 18,
+    name: "MySQL",
+    color: "text-white",
+    img: "/mysql.svg",
+    height: "h-10",
+  },
+  {
+    id: 19,
+    name: "Gsap",
+    color: "text-white",
+    img: "/gsap.svg",
+    height: "h-10",
+  },
+  {
+    id: 20,
+    name: "Figma",
+    color: "text-white",
+    img: "/figma.svg",
+    height: "h-10",
+  }
+];
 export const projects = [ 
   {
     id: 1,

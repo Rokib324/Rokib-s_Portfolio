@@ -30,8 +30,8 @@ const Clients = () => {
             >
               {/* Logo and Company Name */}
               <div className="flex flex-row items-center gap-4 mb-4">
-                <img
-                  src={company.img}
+              <img
+                src={company.img}
                   alt={`${company.name} logo`}
                   className="h-12 md:h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
                   onError={(e) => {
